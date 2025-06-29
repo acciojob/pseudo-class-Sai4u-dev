@@ -1,23 +1,23 @@
-/*  your css code here. If applicable */
 #container {
   margin: 20px;
   position: relative;
 }
 
+/* Common styles for both pseudo-elements */
 #container::before,
 #container::after {
-  content: "Special Text";
-  color: #f00;
+  color: #f00; /* red */
   font-size: 20px;
   display: block;
   text-align: center;
   margin: 10px 0;
 }
 
+/* Specific content expected by the test */
 #container::before {
-  content: "Special Text Before";
+  content: "Before Element";
 }
 
 #container::after {
-  content: "Special Text After";
+  content: "After Element";
 }
